@@ -1,4 +1,10 @@
 button{
   width:100px;
   height:100px;
+  background:grey;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.pad-container{
+  width:400px;
 }
