@@ -1,6 +1,7 @@
 import padsData from './pads'
 import './App.css'
 import {useState} from 'react' 
+import Pad from './Pad.jsx'
 
 function App(props) {
   console.log(padsData)
@@ -9,7 +10,7 @@ function App(props) {
     <main style={{background:props.darkMode ? 'black' : 'white'}}>
       <div className='pad-container'>
         {pads.map(pad=>(
-          <button style={{background:pad.color}} key={pad.id}>{pad.id}</button>
+          <Pad key={pad.id} color={pad.color} id={pad.id} />
         ))}
       </div>
     </main>
