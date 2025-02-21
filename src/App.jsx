@@ -10,7 +10,11 @@ function App(props) {
     <main style={{background:props.darkMode ? 'black' : 'white'}}>
       <div className='pad-container'>
         {pads.map(pad=>(
-          <Pad key={pad.id} color={pad.color} id={pad.id} />
+          <Pad  key={pad.id} 
+                color={pad.color} 
+                id={pad.id} 
+                on={pad.on}
+          />
         ))}
       </div>
     </main>

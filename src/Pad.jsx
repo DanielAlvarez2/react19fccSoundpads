@@ -1,5 +1,5 @@
 export default function Pad(props){
     return(
-        <button style={{background:props.color}}>{props.id}</button>
+        <button className={props.on ? 'on' : undefined} style={{background:props.color}}>{props.id}</button>
     )
 }

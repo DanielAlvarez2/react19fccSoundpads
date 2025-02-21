@@ -11,6 +11,10 @@ button{
   border-radius: 10px;
   border: none;
   margin:5px;
+  opacity:0.1;
+}
+button.on{
+  opacity:1;
 }
 .pad-container{
   width:440px;
